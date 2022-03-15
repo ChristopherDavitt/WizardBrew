@@ -11,7 +11,7 @@ export default class Home extends Component {
     render() {
     return (
       <div className='homePage' style={{
-        backgroundImage: `url( ${Background} )`,
+        backgroundColor: 'black',
         height: '100vh',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -21,19 +21,20 @@ export default class Home extends Component {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        gap: '3rem'
+        gap: '3rem',
+        lineHeight: '2rem'
       }}>
           <div className='leftSide' style={{
                 color: 'yellow',
-                maxWidth: '400px'
+                maxWidth: '800px'
           }}>
                 <h1>Welcome to Wizards Brew</h1>
                 <h2>A FREE play-2-earn game</h2>
                 <h4 style={{
-                    maxWidth: '400px'
+                    maxWidth: '800px'
                 }}>Take your wizard on quests to collect materials</h4>
                 <h4>to brew an assortment of collectible potions</h4>
-                <h3>PvP potion game Coming Soon!</h3>
+                <h3>PvP potion battles Coming Soon!</h3>
                 <div style={{
                     display: 'flex',
                     alignItems: 'center',
@@ -41,8 +42,20 @@ export default class Home extends Component {
                 }}>
                     <h3>Learn More</h3>
                     <button style={{
-                        maxHeight: '30px'
+                        minHeight: '30px',
+                        padding: '5px'
                     }}>About</button>
+                </div>
+                <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '1rem'
+                }}>
+                    <h3>Sign-Up</h3>
+                    <button style={{
+                        minHeight: '30px',
+                        padding: '5px'
+                    }}>Sign Up</button>
                 </div>
           </div>
           <div className='rightSide' style={{
@@ -54,9 +67,9 @@ export default class Home extends Component {
                     minHeight: '40px',
                     maxHeight: '60px',
                     maxWidth: '400px',
-                    backgroundColor: ''
+                    padding: '5px'
 
-                }}>Enter the Wizard World</button>
+                }}>Start Playing</button>
           </div>
       </div>
     )
